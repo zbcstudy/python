@@ -24,5 +24,10 @@ print(math.sqrt(9))
 
 print(cmath.sqrt(-1))
 
+# 字符串换行
 print("tim\nsso")
+# 字符串不换行
 print(r"tim\nsso")
+
+print(0.2+0.3)
+
