@@ -7,7 +7,7 @@ print('欢迎 '+name+' 光临！')
 # 多个参数
 print('欢迎',name,'光临！')
 # 占位符
-print('欢迎 %s 光临！'%name)
+print('欢迎 %s 光临！' % name)
 # 格式化字符串
 print(f'欢迎 {name} 光临！')
 
