@@ -8,7 +8,7 @@ class Person :
     # 在类中也可以定义函数，类中的定义的函数，我们称为方法
     # 这些方法可以通过该类的所有实例来访问
     
-    def say_hello(self) :
+    def say_hello(self):
         # 方法每次被调用时，解析器都会自动传递第一个实参
         # 第一个参数，就是调用方法的对象本身，
         #   如果是p1调的，则第一个参数就是p1对象
@@ -18,7 +18,8 @@ class Person :
         # say_hello()这个方法，可以显示如下格式的数据：
         #   你好！我是 xxx
         #   在方法中不能直接访问类中的属性
-        print('你好！我是 %s' %self.name)
+        print('你好！我是 %s' % self.name)
+
 
 # 创建Person的实例
 p1 = Person()

@@ -1,4 +1,4 @@
-class Person :
+class Person:
     # 在类中可以定义一些特殊方法（魔术方法）
     # 特殊方法都是以__开头，__结尾的方法
     # 特殊方法不需要我们自己调用，不要尝试去调用特殊方法
@@ -13,16 +13,16 @@ class Person :
     #   3.__init__(self)方法执行
     #   4.将对象的id赋值给变量
 
-    # init会在对象创建以后离开执行
+    # init会在对象创建以后立刻执行
     # init可以用来向新创建的对象中初始化属性
     # 调用类创建对象时，类后边的所有参数都会依次传递到init()中
-    def __init__(self,name):
+    def __init__(self, name):
         # print(self)
         # 通过self向新建的对象中初始化属性
         self.name = name
 
     def say_hello(self):
-        print('大家好，我是%s'%self.name)
+        print('大家好，我是%s' % self.name)
 
 
 # 目前来讲，对于Person类来说name是必须的，并且每一个对象中的name属性基本上都是不同
@@ -47,9 +47,9 @@ p3 = Person('沙和尚')
 p4 = Person('唐僧')
 # p1.__init__() 不要这么做
 
-# print(p1.name)
-# print(p2.name)
-# print(p3.name)
-# print(p4.name)
+print(p1.name)
+print(p2.name)
+print(p3.name)
+print(p4.name)
 
 p4.say_hello()
