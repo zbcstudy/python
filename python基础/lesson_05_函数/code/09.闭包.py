@@ -8,7 +8,7 @@ def fn():
 
     # 函数内部再定义一个函数
     def inner():
-        print('我是fn2' , a)
+        print('我是fn2', a)
 
     # 将内部函数 inner作为返回值返回   
     return inner
@@ -21,10 +21,10 @@ r = fn()
 # r()
 
 # 求多个数的平均值
-# nums = [50,30,20,10,77]
+nums = [50,30,20,10,77]
 
 # sum()用来求一个列表中所有元素的和
-# print(sum(nums)/len(nums))
+print(sum(nums)/len(nums))
 
 # 形成闭包的要件
 #   ① 函数嵌套

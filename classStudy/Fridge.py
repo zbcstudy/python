@@ -43,4 +43,3 @@ f.add_one("apple")
 f.add_many({"egg": 5, "grape": 9})
 print(f.items)
 print(f.has("egg", 7))
-

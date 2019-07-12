@@ -4,6 +4,7 @@ b = str('hello') # 创建一个str类的实例
 # print(a , type(a))
 # print(b , type(b))
 
+
 # 定义一个简单的类
 # 使用class关键字来定义类，语法和函数很像！
 # class 类名([父类]):
@@ -11,6 +12,7 @@ b = str('hello') # 创建一个str类的实例
 # <class '__main__.MyClass'>
 class MyClass():
     pass
+
 
 # print(MyClass)
 # 使用MyClass创建一个对象

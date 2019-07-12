@@ -11,7 +11,7 @@ def scan_pdf(root, dirs, files):
             print(path)
 
 
-for root, dirs, files in os.walk("F:\\文档\\2017-12-25"):
+for root, dirs, files in os.walk("F:\\文档\\2018-01-24"):
     print(root)
     print(dirs)
     print(files)

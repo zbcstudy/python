@@ -20,6 +20,10 @@ def fn(a:int,b:bool,c:str='hello') -> int:
     '''
     return 'ss'
 
+
 help(fn)
 
+
 print(fn(1,True,'ss'))
+
+help
