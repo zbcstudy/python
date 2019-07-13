@@ -1,5 +1,6 @@
-a = int(10) # 创建一个int类的实例
-b = str('hello') # 创建一个str类的实例
+a = int(10)  # 创建一个int类的实例
+b = str('hello')  # 创建一个str类的实例
+
 
 # print(a , type(a))
 # print(b , type(b))
@@ -17,14 +18,14 @@ class MyClass():
 # print(MyClass)
 # 使用MyClass创建一个对象
 # 使用类来创建对象，就像调用一个函数一样
-mc = MyClass() # mc就是通过MyClass创建的对象，mc是MyClass的实例
+mc = MyClass()  # mc就是通过MyClass创建的对象，mc是MyClass的实例
 mc_2 = MyClass()
 mc_3 = MyClass()
 mc_4 = MyClass()
 # mc mc_2 mc_3 mc_4 都是MyClass的实例，他们都是一类对象
 # isinstance()用来检查一个对象是否是一个类的实例
-result = isinstance(mc_2,MyClass)
-result = isinstance(mc_2,str)
+result = isinstance(mc_2, MyClass)
+result = isinstance(mc_2, str)
 
 # print(mc , type(mc))
 # print('result =',result)

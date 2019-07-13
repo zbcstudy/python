@@ -12,6 +12,7 @@ class Animal:
     # def bark(self):
     #     print('动物嚎叫~~~')   
 
+
 # 定义一个类 Dog（狗）
 #   这个类中需要三个方法：run() sleep() bark()
 # class Dog:
@@ -40,18 +41,22 @@ class Animal:
 #   所以我们经常需要通过继承来对一个类进行扩展
 
 class Dog(Animal):
+
     def bark(self):
-        print('汪汪汪~~~') 
+        print('汪汪汪~~~')
 
     def run(self):
-        print('狗跑~~~~')    
+        print('狗跑~~~~')
+
 
 class Hashiqi(Dog):
     def fan_sha(self):
-        print('我是一只傻傻的哈士奇')        
+        print('我是一只傻傻的哈士奇')
+
 
 d = Dog()
 h = Hashiqi()
+
 
 # d.run()
 # d.sleep()
@@ -66,6 +71,7 @@ h = Hashiqi()
 class Person(object):
     pass
 
+
 # issubclass() 检查一个类是否是另一个类的子类
 # print(issubclass(Animal , Dog))
 # print(issubclass(Animal , object))
@@ -74,5 +80,4 @@ class Person(object):
 # isinstance()用来检查一个对象是否是一个类的实例
 #   如果这个类是这个对象的父类，也会返回True
 #   所有的对象都是object的实例
-print(isinstance(print , object))
-
+print(isinstance(print, object))

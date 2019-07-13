@@ -42,5 +42,8 @@ print(s.find('b'))
 print(divmod(7, 4))
 print(7 // 4, 7 % 4)
 
+a = 1
+print("eval:", eval("a+1"))
+
 print(bin(7))
 print(bin(-7))

@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self,name):
+    def __init__(self, name):
         self._name = name
 
     def run(self):
@@ -12,14 +12,15 @@ class Animal:
     def name(self):
         return self._name
 
-    @name.setter    
-    def name(self,name):
+    @name.setter
+    def name(self, name):
         self._name = name
+
 
 # 父类中的所有方法都会被子类继承，包括特殊方法，也可以重写特殊方法
 class Dog(Animal):
 
-    def __init__(self,name,age):
+    def __init__(self, name, age):
         # 希望可以直接调用父类的__init__来初始化父类中定义的属性
         # super() 可以用来获取当前类的父类，
         #   并且通过super()返回对象调用父类方法时，不需要传递self
@@ -27,20 +28,21 @@ class Dog(Animal):
         self._age = age
 
     def bark(self):
-        print('汪汪汪~~~') 
+        print('汪汪汪~~~')
 
     def run(self):
-        print('狗跑~~~~')   
+        print('狗跑~~~~')
 
     @property
     def age(self):
         return self._age
 
-    @age.setter    
-    def age(self,age):
-        self._age = name        
+    @age.setter
+    def age(self, age):
+        self._age = age
 
-d = Dog('旺财',18) 
 
-print(d.name)       
-print(d.age)       
+d = Dog('旺财', 18)
+d.age = 20
+print(d.name)
+print(d.age)
