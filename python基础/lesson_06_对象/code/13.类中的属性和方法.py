@@ -1,6 +1,5 @@
 # 定义一个类
 class A(object):
-
     # 类属性
     # 实例属性
     # 类方法
@@ -24,16 +23,17 @@ class A(object):
     #       当通过实例调用时，会自动将当前调用对象作为self传入
     #       当通过类调用时，不会自动传递self，此时我们必须手动传递self
     def test(self):
-        print('这是test方法~~~ ' , self)    
+        print('这是test方法~~~ ', self)
 
-    # 类方法    
+        # 类方法
+
     # 在类内部使用 @classmethod 来修饰的方法属于类方法
     # 类方法的第一个参数是cls，也会被自动传递，cls就是当前的类对象
     #   类方法和实例方法的区别，实例方法的第一个参数是self，而类方法的第一个参数是cls
     #   类方法可以通过类去调用，也可以通过实例调用，没有区别
     @classmethod
     def test_2(cls):
-        print('这是test_2方法，他是一个类方法~~~ ',cls)
+        print('这是test_2方法，他是一个类方法~~~ ', cls)
         print(cls.count)
 
     # 静态方法
@@ -61,5 +61,4 @@ a = A()
 
 A.test_3()
 a.test_3()
-
-
+a.test_2()

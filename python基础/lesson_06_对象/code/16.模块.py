@@ -19,9 +19,8 @@
 #   - 在每一个模块内部都有一个__name__属性，通过这个属性可以获取到模块的名字
 #   - __name__属性值为 __main__的模块是主模块，一个程序中只会有一个主模块
 #       主模块就是我们直接通过 python 执行的模块
+
 import test_module as test
 
 # print(test.__name__)
 print(__name__)
-
-

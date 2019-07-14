@@ -3,7 +3,7 @@
 # 当我们模块中代码过多时，或者一个模块需要被分解为多个模块时，这时就需要使用到包
 # 普通的模块就是一个py文件，而包是一个文件夹
 #   包中必须要一个一个 __init__.py 这个文件，这个文件中可以包含有包中的主要内容
-from hello import a , b
+from hello import a, b
 
 print(a.c)
 print(b.d)

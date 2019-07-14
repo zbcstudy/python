@@ -12,10 +12,11 @@ class A:
 
     # del是一个特殊方法，它会在对象被垃圾回收前调用
     def __del__(self):
-        print('A()对象被删除了~~~',self)
+        print('A()对象被删除了~~~', self)
+
 
 a = A()
-b = a # 又使用一个变量b，来引用a对应的对象
+b = a  # 又使用一个变量b，来引用a对应的对象
 
 print(a.name)
 

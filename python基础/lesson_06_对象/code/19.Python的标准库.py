@@ -48,5 +48,5 @@ import os
 
 # os.system()
 # 可以用来执行操作系统的名字
-# os.system('dir')
-os.system('notepad')
+os.system('dir')
+# os.system('notepad')  # 打开notepad软件

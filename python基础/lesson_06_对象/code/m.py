@@ -5,14 +5,17 @@ b = 20
 # 添加了_的变量，只能在模块内部访问，在通过import * 引入时，不会引入_开头的变量
 _c = 30
 
+
 # 可以在模块中定义函数，同样可以通过模块访问到
 def test():
     print('test')
 
+
 def test2():
     print('test2')
 
-# 也可以定义类    
+
+# 也可以定义类
 class Person:
     def __init__(self):
         self.name = '孙悟空'
