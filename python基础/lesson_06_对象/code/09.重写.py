@@ -12,13 +12,14 @@ class Animal:
 
 class Dog(Animal):
     def bark(self):
-        print('汪汪汪~~~') 
+        print('汪汪汪~~~')
 
     def run(self):
-        print('狗跑~~~~')    
+        print('狗跑~~~~')
+
+    # 如果在子类中如果有和父类同名的方法，则通过子类实例去调用方法时，
 
 
-# 如果在子类中如果有和父类同名的方法，则通过子类实例去调用方法时，
 #   会调用子类的方法而不是父类的方法，这个特点我们成为叫做方法的重写（覆盖，override）
 # 创建Dog类的实例
 # d = Dog()
@@ -33,15 +34,18 @@ class A(object):
     def test(self):
         print('AAA')
 
+
 class B(A):
     def test(self):
         print('BBB')
 
+
 class C(B):
     def test(self):
-        print('CCC')   
+        print('CCC')
 
-# 创建一个c的实例
+    # 创建一个c的实例
+
+
 c = C()
 c.test()
-
