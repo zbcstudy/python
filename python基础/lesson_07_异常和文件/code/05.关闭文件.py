@@ -2,12 +2,12 @@
 file_name = 'demo.txt'
 
 # 调用open()来打开文件
-# file_obj = open(file_name)
+file_obj = open(file_name)
 
 # # 当我们获取了文件对象以后，所有的对文件的操作都应该通过对象来进行
 # # 读取文件中的内容
 # # read()方法，用来读取文件中的内容，它会将内容全部保存为一个字符串返回
-# content = file_obj.read()
+content = file_obj.read()
 
 # print(content)
 

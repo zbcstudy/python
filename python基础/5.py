@@ -1,4 +1,5 @@
 from math import sqrt as sq
+import os
 
 print(sq(4))
 
@@ -29,7 +30,7 @@ while x <= 10:
     print(x)
     x += 1
 
-for number in range(23,26):
+for number in range(23, 26):
     print(number)
 
 # 循环遍历字典元素
@@ -46,3 +47,5 @@ while not name:
 for n in z:
     print(n)
 
+isdir = os.path.isdir("classStudy/test.html")
+print(isdir)

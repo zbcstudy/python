@@ -45,6 +45,9 @@ class A(object):
     def test_3():
         print('test_3执行了~~~')
 
+    def __del__(self):
+        print("析构函数：释放对象时会执行")
+
 
 a = A()
 # 实例属性，通过实例对象添加的属性属于实例属性
