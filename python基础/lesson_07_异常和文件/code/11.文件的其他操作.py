@@ -15,7 +15,7 @@ r = os.getcwd()
 # r = os.getcwd()
 
 # 创建目录
-# os.mkdir("aaa") # 在当前目录下创建一个名字为 aaa 的目录
+os.mkdir("aaa") # 在当前目录下创建一个名字为 aaa 的目录
 
 # 删除目录
 # os.rmdir('abc')
@@ -26,6 +26,6 @@ r = os.getcwd()
 
 # os.rename('旧名字','新名字') 可以对一个文件进行重命名，也可以用来移动一个文件
 # os.rename('aa.txt','bb.txt')
-os.rename('bb.txt','c:/users/lilichao/desktop/bb.txt')
+os.rename('bb.txt', 'c:/users/lilichao/desktop/bb.txt')
 
 pprint(r)
