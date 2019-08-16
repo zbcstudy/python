@@ -1,14 +1,16 @@
 # 求任意三个数的乘积
-def mul(a,b,c):
-    print(a*b*c)
+def mul(a, b, c):
+    print(a * b * c)
+
 
 # 根据不同的用户名显示不同的欢迎信息
 
 
 def welcome(username):
-    print('欢迎',username,'光临')
+    print('欢迎', username, '光临')
 
-# mul(1,2,3)   
+
+# mul(1,2,3)
 # welcome('孙悟空') 
 
 # 定义一个函数
@@ -23,9 +25,10 @@ def fn(a=5, b=10, c=20):
     print('c =', c)
 
 
-fn(1 , 2 , 3)
-fn(1 , 2)
+fn(1, 2, 3)
+fn(1, 2)
 fn()
+
 
 # 实参的传递方式
 # 位置参数
@@ -52,14 +55,15 @@ b = 123
 b = True
 b = 'hello'
 b = None
-b = [1,2,3]
+b = [1, 2, 3]
 
 # fn2(b)    
 fn2(fn)
 
 
 def fn3(a, b):
-    print(a+b)
+    print(a + b)
+
 
 # fn3(123,"456")
 
@@ -71,10 +75,11 @@ def fn4(a):
     # 如果形参执行的是一个对象，当我们通过形参去修改对象时
     #   会影响到所有指向该对象的变量
     a[0] = 30
-    print('a =',a,id(a))
+    print('a =', a, id(a))
 
-c = 10   
-c = [1,2,3] 
+
+c = 10
+c = [1, 2, 3]
 
 # fn4(c)
 # fn4(c.copy())

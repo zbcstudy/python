@@ -24,11 +24,12 @@ def factorial(n):
 
     # 创建一个变量，来保存结果
     result = n
-    
-    for i in range(1,n):
+
+    for i in range(1, n):
         result *= i
 
-    return result    
+    return result
+
 
 # 求10的阶乘    
 # print(factorial(20))
@@ -68,12 +69,13 @@ def factorial(n):
             n 要求阶乘的数字
     '''
     # 基线条件 判断n是否为1，如果为1则此时不能再继续递归
-    if n == 1 :
+    if n == 1:
         # 1的阶乘就是1，直接返回1
         return 1
 
     # 递归条件    
-    return n * factorial(n-1)
+    return n * factorial(n - 1)
+
 
 # print(factorial(10))
 
@@ -83,7 +85,7 @@ def factorial(n):
 #   10 ** 4 = 10 * 10 ** 3
 #   ...
 #   10 ** 1 = 10
-def power(n , i):
+def power(n, i):
     '''
         power()用来为任意的数字做幂运算
 
@@ -96,13 +98,13 @@ def power(n , i):
         # 求1次幂
         return n
     # 递归条件
-    return n * power(n , i-1)
-
-# print(power(8,6))    
+    return n * power(n, i - 1)
 
 
+# print(power(8,6))
 
-#   
+
+#
 # 练习
 #   创建一个函数，用来检查一个任意的字符串是否是回文字符串，如果是返回True，否则返回False
 #   回文字符串，字符串从前往后念和从后往前念是一样的
@@ -126,14 +128,15 @@ def hui_wen(s):
             s：就是要检查的字符串
     '''
     # 基线条件
-    if len(s) < 2 :
+    if len(s) < 2:
         # 字符串的长度小于2，则字符串一定是回文
         return True
     elif s[0] != s[-1]:
         # 第一个字符和最后一个字符不相等，不是回文字符串
-        return False    
-    # 递归条件    
+        return False
+        # 递归条件
     return hui_wen(s[1:-1])
+
 
 # def hui_wen(s):
 #     '''
@@ -149,5 +152,4 @@ def hui_wen(s):
 #     # 递归条件    
 #     return s[0] == s[-1] and hui_wen(s[1:-1])
 
-print(hui_wen('abcdefgfedcba'))    
-
+print(hui_wen('abcdefgfedcba'))
