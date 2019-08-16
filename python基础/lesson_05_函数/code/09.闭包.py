@@ -3,7 +3,6 @@
 #   可以将一些私有的数据藏到的闭包中
 
 def fn():
-
     a = 10
 
     # 函数内部再定义一个函数
@@ -13,41 +12,42 @@ def fn():
     # 将内部函数 inner作为返回值返回   
     return inner
 
+
 # r是一个函数，是调用fn()后返回的函数
 # 这个函数实在fn()内部定义，并不是全局函数
 # 所以这个函数总是能访问到fn()函数内的变量
-r = fn()    
+r = fn()
 
-# r()
+r()
 
 # 求多个数的平均值
-nums = [50,30,20,10,77]
+nums = [50, 30, 20, 10, 77]
 
 # sum()用来求一个列表中所有元素的和
-print(sum(nums)/len(nums))
+print(sum(nums) / len(nums))
+
 
 # 形成闭包的要件
 #   ① 函数嵌套
 #   ② 将内部函数作为返回值返回
 #   ③ 内部函数必须要使用到外部函数的变量
-def make_averager():
+def make_average():
     # 创建一个列表，用来保存数值
-    nums = []
+    num = []
 
     # 创建一个函数，用来计算平均值
-    def averager(n) :
+    def average(n):
         # 将n添加到列表中
         nums.append(n)
         # 求平均值
-        return sum(nums)/len(nums)
+        return sum(nums) / len(nums)
 
-    return averager
-
-averager = make_averager()
-
-print(averager(10))
-print(averager(20))
-print(averager(30))
-print(averager(40))
+    return average
 
 
+average = make_average()
+
+print(average(10))
+print(average(20))
+print(average(30))
+print(average(40))

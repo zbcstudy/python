@@ -1,7 +1,7 @@
 # 创建几个函数
 
 
-def add(a , b):
+def add(a, b):
     '''
         求任意两个数的和
     '''
@@ -9,12 +9,13 @@ def add(a , b):
     return r
 
 
-def mul(a , b):
+def mul(a, b):
     '''
         求任意两个数的积
     '''
     r = a * b
-    return r    
+    return r
+
 
 # 希望函数可以在计算前，打印开始计算，计算结束后打印计算完毕
 #  我们可以直接通过修改函数中的代码来完成这个需求，但是会产生以下一些问题
@@ -31,21 +32,24 @@ def mul(a , b):
 def fn():
     print('我是fn函数....')
 
+
 # 只需要根据现有的函数，来创建一个新的函数
 def fn2():
     print('函数开始执行~~~')
     fn()
     print('函数执行结束~~~')
 
-# fn2()    
 
-def new_add(a,b):
+# fn2()
+
+def new_add(a, b):
     print('计算开始~~~')
-    r = add(a,b)
+    r = add(a, b)
     print('计算结束~~~')
     return r
 
-# r = new_add(111,222)    
+
+# r = new_add(111,222)
 # print(r)
 
 # 上边的方式，已经可以在不修改源代码的情况下对函数进行扩展了
@@ -59,11 +63,12 @@ def begin_end(old):
         参数：
             old 要扩展的函数对象
     '''
+
     # 创建一个新函数
-    def new_function(*args , **kwargs):
+    def new_function(*args, **kwargs):
         print('开始执行~~~~')
         # 调用被扩展的函数
-        result = old(*args , **kwargs)
+        result = old(*args, **kwargs)
         print('执行结束~~~~')
         # 返回函数的执行结果
         return result
@@ -71,9 +76,11 @@ def begin_end(old):
     # 返回新函数        
     return new_function
 
+
 f = begin_end(fn)
 f2 = begin_end(add)
 f3 = begin_end(mul)
+
 
 # r = f()
 # r = f2(123,456)
@@ -92,11 +99,12 @@ def fn3(old):
         参数：
             old 要扩展的函数对象
     '''
+
     # 创建一个新函数
-    def new_function(*args , **kwargs):
+    def new_function(*args, **kwargs):
         print('fn3装饰~开始执行~~~~')
         # 调用被扩展的函数
-        result = old(*args , **kwargs)
+        result = old(*args, **kwargs)
         print('fn3装饰~执行结束~~~~')
         # 返回函数的执行结果
         return result
@@ -104,9 +112,11 @@ def fn3(old):
     # 返回新函数        
     return new_function
 
+
 @fn3
 @begin_end
 def say_hello():
     print('大家好~~~')
+
 
 say_hello()
