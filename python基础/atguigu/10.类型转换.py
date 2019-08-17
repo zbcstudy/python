@@ -50,7 +50,7 @@ a = str(a)
 a = None
 a = bool(a)
 
-print('a =',a)
-print('a的类型是',type(a))
+print('a =', a)
+print('a的类型是', type(a))
 # b = 456
 # print('hello'+str(b))

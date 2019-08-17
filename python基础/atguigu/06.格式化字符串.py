@@ -14,12 +14,12 @@ a = 123
 # %s 在字符串中表示任意字符
 # %f 浮点数占位符
 # %d 整数占位符
-b = 'Hello %s'%'孙悟空'
-b = 'hello %s 你好 %s'%('tom','孙悟空')
-b = 'hello %3.5s'%'abcdefg' # %3.5s字符串的长度限制在3-5之间
-b = 'hello %s'%123.456
-b = 'hello %.2f'%123.456
-b = 'hello %d'%123.95
+b = 'Hello %s' % '孙悟空'
+b = 'hello %s 你好 %s' % ('tom', '孙悟空')
+b = 'hello %3.5s' % 'abcdefg'  # %3.5s字符串的长度限制在3-5之间
+b = 'hello %s' % 123.456
+b = 'hello %.2f' % 123.456
+b = 'hello %d' % 123.95
 b = '呵呵'
 
 # print('a = %s'%a)

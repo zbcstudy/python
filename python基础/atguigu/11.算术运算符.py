@@ -11,7 +11,7 @@ a = 10 + 5  # 计算
 a = 'hello' + ' ' + 'world'  # 拼串
 
 a = 10 - 5  # 计算
-a = 5 - True 
+a = 5 - True
 a = a - 2  # 用变量a的值减去2，然后再赋值给a
 # a = 'hello' - 'h' TypeError
 
@@ -22,7 +22,7 @@ a = 5 / 2
 # a = 5 / 0 ZeroDivisionError: division by zero
 a = 10 / 3
 a = 10 // 3
-a = 5 // 2 
+a = 5 // 2
 
 a = 2 ** 2
 a = 10 ** 5
@@ -34,4 +34,3 @@ a = 10 % 3  # 1
 a = 10 % 2  # 0
 
 print("a =", a)
-

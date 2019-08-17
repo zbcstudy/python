@@ -1,7 +1,7 @@
 # 通过类型检查，可以检查只能值（变量）的类型
 
-a = 123 # 数值
-b = '123' # 字符串
+a = 123  # 数值
+b = '123'  # 字符串
 
 # print('a =',a)
 # print('b =',b)、
@@ -11,13 +11,8 @@ b = '123' # 字符串
 c = type('123')
 c = type(a)
 # print(type(b))
-print(type(1)) # <class 'int'>
-print(type(1.5)) # <class 'float'>
-print(type(True)) # <class 'bool'>
+print(type(1))  # <class 'int'>
+print(type(1.5))  # <class 'float'>
+print(type(True))  # <class 'bool'>
 print(type('hello'))  # <class 'str'>
-print(type(None)) # <class 'NoneType'>
-
-
-
-
-
+print(type(None))  # <class 'NoneType'>

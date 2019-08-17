@@ -1,4 +1,4 @@
-print('hello','哈哈','abc')
+print('hello', '哈哈', 'abc')
 print(123)
 print('bcd')
 
