@@ -17,7 +17,7 @@
 #       如果为False，则执行else后的代码块
 
 age = 7
-if age > 17 :
+if age > 17:
     print('你已经成年了~~')
-else :
+else:
     print('你还未成年~~')

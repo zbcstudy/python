@@ -26,7 +26,7 @@ num = 10
 # if num > 10 : print('num比10大！')
 # print('谁也管不了我')
 
-if False :
+if False:
     print(123)
     print(456)
     print(789)
@@ -49,4 +49,3 @@ num = 28
 # 如果用户输入的是其他的用户名，则什么也不做
 if 20 < num < 30:
     print("num满足条件")
-

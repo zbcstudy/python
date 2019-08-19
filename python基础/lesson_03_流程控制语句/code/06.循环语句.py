@@ -29,8 +29,8 @@
 
 # 创建一个执行十次的循环
 i = 0
-while i < 10 :
+while i < 10:
     i += 1
-    print(i,'hello')
-else :
+    print(i, 'hello')
+else:
     print('else中的代码块')

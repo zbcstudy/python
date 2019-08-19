@@ -35,9 +35,9 @@ age = 210
 
 age = 68
 
-if age >= 18 and age < 30 :
+if age >= 18 and age < 30:
     print('你已经成年了！')
-elif age >= 30 and age < 60 :
+elif age >= 30 and age < 60:
     print('你已经中年了！')
-elif age >= 60 :
+elif age >= 60:
     print('你已经退休了！')

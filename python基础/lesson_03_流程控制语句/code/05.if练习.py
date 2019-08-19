@@ -111,12 +111,11 @@ face = float(input('请输入你的颜值(平方厘米):'))
 
 # 判断到底嫁不嫁
 # 如果这三个条件同时满足，则:'我一定要嫁给他'
-if height > 180 and money > 1000 and face > 500 :
+if height > 180 and money > 1000 and face > 500:
     print('我一定要嫁给他！')
 # 如果三个条件有为真的情况，则:'嫁吧，比上不足，比下有余。'
-elif height > 180 or money > 1000 or face > 500 :
+elif height > 180 or money > 1000 or face > 500:
     print('嫁吧，比上不足，比下有余。')
 # 如果三个条件都不满足，则:'不嫁！'
-else :
+else:
     print('不嫁！')
-
