@@ -14,8 +14,8 @@ while i < 1000:
     # 求i的个位数字
     c = i % 10
     # print(i , a , b , c)
-    
+
     # 判断i是否是水仙花数
-    if a**3 + b**3 + c**3 == i :
+    if a ** 3 + b ** 3 + c ** 3 == i:
         print(i)
     i += 1

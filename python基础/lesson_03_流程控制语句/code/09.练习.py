@@ -9,12 +9,12 @@ flag = True
 while i < num:
     # 判断num能否被i整除
     # 如果num能被i整除，则说明num一定不是质数
-    if num % i == 0 :
+    if num % i == 0:
         # 一旦进入判断，则证明num不是质数，则需要将flag修改为false
         flag = False
     i += 1
 
-if flag :
-    print(num,'是质数')
-else :
-    print(num,'不是质数')
+if flag:
+    print(num, '是质数')
+else:
+    print(num, '不是质数')
