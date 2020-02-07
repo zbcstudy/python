@@ -1,13 +1,14 @@
 import numpy as np
 
+
 a = [1, 2, 3]
 b = [i + 1 for i in a]
 print(b)
 
 
 def numpy_sum(n):
-    a = np.arange(n) ** 3
-    print(a)
+    s = np.arange(n) ** 3
+    print(s)
 
 
 numpy_sum(3)

@@ -9,6 +9,7 @@
 class A:
     def __init__(self):
         self.name = 'A类'
+        self.age = 18
 
     # del是一个特殊方法，它会在对象被垃圾回收前调用
     def __del__(self):
@@ -19,6 +20,7 @@ a = A()
 b = a  # 又使用一个变量b，来引用a对应的对象
 
 print(a.name)
+print(a.age)
 
 # a = None # 将a设置为了None，此时没有任何的变量对A()对象进行引用，它就是变成了垃圾
 # b = None
