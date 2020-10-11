@@ -1,5 +1,5 @@
 import mysql.connector
-import datetime, time
+import time
 
 DB_USER = 'root'
 DB_PASS = 'sneakerhead'
