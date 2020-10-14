@@ -29,3 +29,6 @@ print(list(tup))
 l1 = ["a", "b", "c"]
 l2 = [1, 2, 3]
 print(dict)
+
+if __name__ == '__main__':
+    dic((9,))

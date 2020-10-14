@@ -18,7 +18,8 @@ import pprint
 # sys.modules
 # 获取当前程序中引入的所有模块
 # modules是一个字典，字典的key是模块的名字，字典的value是模块对象
-# pprint.pprint(sys.modules)
+var = sys.modules
+pprint.pprint(var.items())
 
 # sys.path
 # 他是一个列表，列表中保存的是模块的搜索路径
