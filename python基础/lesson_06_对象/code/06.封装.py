@@ -71,4 +71,5 @@ class Person:
 p = Person('孙悟空')
 
 # print(p.name)
+p.set_name('唐僧')
 print(p._name)

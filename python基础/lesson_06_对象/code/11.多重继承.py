@@ -23,7 +23,7 @@ class C(A, B):
 
 
 # 类名.__bases__ 这个属性可以用来获取当前类的所有父类
-# print(C.__bases__) (<class '__main__.B'>,)
+print(C.__bases__)  # (<class '__main__.B'>,)
 # print(B.__bases__) (<class 'object'>,)
 
 # print(C.__bases__) # (<class '__main__.A'>, <class '__main__.B'>)

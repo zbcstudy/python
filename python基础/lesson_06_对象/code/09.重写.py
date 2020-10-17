@@ -48,4 +48,4 @@ class C(B):
 
 
 c = C()
-c.test()
+c.test2()

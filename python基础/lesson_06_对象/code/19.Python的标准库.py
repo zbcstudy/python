@@ -45,7 +45,7 @@ import os
 
 # os.environ
 # 通过这个属性可以获取到系统的环境变量
-# pprint.pprint(os.environ['path'])
+pprint.pprint(os.environ['path'])
 
 # os.system()
 # 可以用来执行操作系统的名字
