@@ -1,7 +1,6 @@
 import sys
 import math
 import os
-import argparse
 
 vec = [2, 4, 6, 1]
 for x in vec:
