@@ -23,17 +23,17 @@
 #   
 
 a = True
-a = not a # 对a进行非运算
+a = not a  # 对a进行非运算
 
 a = 1
 a = ''
 a = not a
 # print('a =',a)
 
-result = True and True # True
-result = True and False # False
-result = False and True # False
-result = False and False # False
+result = True and True  # True
+result = True and False  # False
+result = False and True  # False
+result = False and False  # False
 
 # print(result) 
 
@@ -41,10 +41,10 @@ result = False and False # False
 # False and print('你猜我出来吗？')第一个值是False，不会看第二个值，所以print()不会执行
 
 
-result = True or True # True
-result = True or False # True
-result = False or True # True
-result = False or False # False
+result = True or True  # True
+result = True or False  # True
+result = False or True  # True
+result = False or False  # False
 
 # print(result) 
 # False or print('你猜我出来吗？') 第一个值为False，继续看第二个，所以打印语句执行
@@ -60,21 +60,21 @@ result = False or False # False
 #       如果第一个值是True，则直接返回第一个值，否则返回第二个值    
 
 # True and True
-result = 1 and 2 # 2
+result = 1 and 2  # 2
 # True and False
-result = 1 and 0 # 0
+result = 1 and 0  # 0
 # False and True
-result = 0 and 1 # 0
+result = 0 and 1  # 0
 # False and False
-result = 0 and None # 0
+result = 0 and None  # 0
 
 # True or True
-result = 1 or 2 # 1
+result = 1 or 2  # 1
 # True or False
-result = 1 or 0 # 1
+result = 1 or 0  # 1
 # False or True
-result = 0 or 1 # 1
+result = 0 or 1  # 1
 # False or False
-result = 0 or None # None
+result = 0 or None  # None
 
 print(result)

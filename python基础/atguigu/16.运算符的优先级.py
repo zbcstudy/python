@@ -6,7 +6,7 @@ c = 30
 # max = a if a > b else b
 # max = max if max > c else c
 
-max = a if (a > b and a > c) else (b if b > c else c) # 不推荐这么使用
+max = a if (a > b and a > c) else (b if b > c else c)  # 不推荐这么使用
 # max = a if (b < a > c) else (b if b > c else c)
 
 # print(max)
@@ -31,7 +31,7 @@ a = 1 or 2 and 3
 
 # 逻辑运算符（补充）
 # 逻辑运算符可以连着使用
-result = 1 < 2 < 3 # 相当于 1 < 2 and 2 < 3
+result = 1 < 2 < 3  # 相当于 1 < 2 and 2 < 3
 result = 10 < 20 > 15
 
 print(result)
