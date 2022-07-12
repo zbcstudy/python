@@ -3,8 +3,9 @@ from numpy import pi
 
 a = np.array([1, 2, 3])
 print(a)
+print(a.shape)
 
-b = np.array(np.matrix("1 2; 3 4"))
+b = np.array(np.matrix("1 2; 3 4"))  # np.mat("1 2; 3 4")
 print(b)
 print(b.ndim)
 print(b.size, b.dtype)
@@ -31,4 +32,4 @@ print(f.reshape(2, 8))
 print(np.linspace(0, 1, 5))
 
 print(np.pi)
-print(np.sin(np.array((0., 30., 45., 60., 90.)) * np.pi / 180.))
+print(np.sin(np.array((0., 30., 45., 60., 90.)) * pi / 180.))
