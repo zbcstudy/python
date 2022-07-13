@@ -1,5 +1,6 @@
 def test(a, *b):
     print(type(b))
+    print("a=", a, "b=", b)
     for i in b:
         a = a + i
     return a
