@@ -13,12 +13,15 @@ def fn():
 
 
 # 打印fn
-# print(fn) <function fn at 0x03D2B618>
-# print(type(fn)) <class 'function'>
+print(fn)  # <function fn at 0x03D2B618>
+print(type(fn))  # <class 'function'>
 
 # fn是函数对象  fn()调用函数
 # print是函数对象 print()调用函数
-# fn()
+print('*' * 20)
+fn()
+print('*' * 20)
+
 
 # 定义一个函数，可以用来求任意两个数的和
 # def sum() :
