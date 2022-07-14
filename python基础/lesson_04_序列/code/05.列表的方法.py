@@ -40,7 +40,8 @@ stus.extend(['唐僧', '白骨精'])
 
 # reverse()
 # 用来反转列表
-# stus.reverse()
+stus.reverse()
+print(stus)
 
 # sort()
 # 用来对列表中的元素进行排序，默认是升序排列
